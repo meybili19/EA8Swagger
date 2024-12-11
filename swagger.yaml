@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: Hello World API
+  description: This is a simple API that shows "Hello World" and performs a simple task.
+  version: 1.0.0
+paths:
+  /:
+    get:
+      summary: Returns "Hello World"
+      description: This endpoint returns a "Hello World!" message and performs a simple task.
+      responses:
+        200:
+          description: Successful response
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: This is a simple task, deployed with Express and Swagger.
